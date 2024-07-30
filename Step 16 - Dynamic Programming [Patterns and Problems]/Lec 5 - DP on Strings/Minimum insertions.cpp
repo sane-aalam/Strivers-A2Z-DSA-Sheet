@@ -1,3 +1,36 @@
+/*
+1 → DP solution [ Using Recursion ]
+  → Express Everything in terms of index
+  → Do all the stuff on that index
+  → According to question [find min, max, sum-up,longest, shortest,total number of ways]
+*/
+
+/*
+2 → DP solution [memorization]
+  → Identification of overlapping problems
+  → Reduce the overlapping recursive calls
+  → Create Array/Matrix using changeable variables
+  → Store the recursive calls
+  → Re-use the recursive calls
+*/
+
+/*
+3 → DP solution [Tabulation]
+  → Create matrix/Array using changeable variables
+  → convert the base condition into initialization of DP array/Matrix
+  → Copy the recurrence relation [fill using iterative way]
+*/
+
+/*
+4 → DP solution [ Optimizing Space complexity ]
+  → If you don't know Space Optimization, you don't know DP.
+  → According to the question, do you really need an array or matrix?
+  → Either You can just need Last Two value
+  → prev_value1 and prev_value2, to Calculate current_value
+  → Inorder to remove the extra space complexity
+  → we can use DP on space Optimization.
+*/
+
 #include <bits/stdc++.h> 
 
 int longestCommonSubsequence(string str1, string str2){
