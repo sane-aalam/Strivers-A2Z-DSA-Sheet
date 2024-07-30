@@ -1,7 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Solution1 - Recursive code
+
+// 1 → DP solution [ Using Recursion ]
+//   → Express Everything in terms of index
+//   → Do all the stuff on that index
+//   → According to quesiton [find min, max, sum-up,longest, shortest,total number of ways]
+
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -28,7 +33,29 @@ int main()
         return 0;
 }
 
-// Solution-2 Memorization of recursive code
+/* 
+
+2 → DP solution [memorization]
+  → Identification of overlapping problems 
+  → Reduce the overlapping recursive calls 
+  → Create Array/Matrix using changeable variables
+  → Store the recursive calls
+  → Re-use the recursive calls
+
+*/
+
+3 → DP solution [Tabulation]
+  → Create matrix/Array using changeable variables
+  → convert the base conditon into initialization of DP array/Matrix
+  → Copy the recurrance relation [fill using itrative way]
+
+4 → DP solution [ Optimizing Space complexity ]
+  → If you don't know space Optimization, you don't know DP.
+  → According to question, indetify do you really need array or matrix?
+  → Eeither You can just need Last Two value
+  → prev_value1 and prev_value2, to Calculate current_value 
+  → Inorder to remove the extra space complexity
+  → we can use DP on space Optimization.
 
 int FibonacciNumber(int index,vector<int> &dp){
     if(index == 0){
